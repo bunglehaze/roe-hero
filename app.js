@@ -6,7 +6,7 @@ const port = 3000;
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
 
 const server = http.createServer((req, res) => {
 	res.statusCode = 200;
